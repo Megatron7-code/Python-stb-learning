@@ -46,8 +46,8 @@ def main():
     print(min(9, 2, 1, 0.2))
     print(min([0.01, 2, 4, -0.07]))
     print(oct(8))
-    for line in open('src/test.py').readlines():
-        print(line)
+    # for line in open('test.py').readlines():
+    #     print(line)
     print(ord('a'))
     print(chr(8364))
     print(ord('€'))
@@ -55,8 +55,29 @@ def main():
     print(2 ** 3)
     print(range(5))
     print(range(1, 5, 2))
-
-
+    print(repr(Test))
+    print(Test)
+    print(round(5.3))
+    print(round(5.4))
+    print(round(5.5))
+    print(round(5.6))
+    print(set([1, 2, 3]))
+    print(set([4, 5, 6]))
+    print(set([4, 5, 6]) & set([7, 5, 9])) # 交集
+    print(set([4, 5, 6]) - set([7, 5, 9])) # 差集
+    print(set([4, 5, 6]) ^ set([7, 5, 9])) # 并集
+    print(getattr(Test, 'temp', 'ttt'))
+    print(setattr(Test, 'temp', 666))
+    print(getattr(Test, 'temp'))
+    print(slice(1, 9))
+    print(sorted([1, 4, 1, 8, 7,6 ,3]))
+    print(tuple([1, 2, 5]))
+    print(type('test'))
+    print(type(123))
+    print(type(Test))
+    print(type(object))
+    print(vars(Test)) # 返回所有成员属性+方法
+    print(list(zip(['a', 'b', 'c'], [1, 2, 4])))
 
 class Test:
     course = 666
